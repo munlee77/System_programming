@@ -1,0 +1,46 @@
+1.  mkdir 'Work'
+    cd 'Work'
+    mkdir 'Лабораторная работа №1!'
+    mkdir 'Sargsyan Victoria S.'
+
+2.  mkdir 'Контрольная работа №1!'
+    chmod 772 'Контрольная работа №1!' ;(права для владельца и группы владельца: чтение, запись, выполнение, для остальных права запись)
+    chmod 200 'Sargsyan Victoria S.' ;(для владельца права только на запись)
+
+3.  touch 'Text @1' 'Text $2' 'Text #3'
+
+4.  cat > 'Text @1'
+    Птица говорун отличается умом и сообразительностью!
+    Отличается умом, отличается сообразительностью...
+
+5.  cat 'Text @1' > 'Text $2'
+
+6.  mv 'Text $2' 'Лабораторная работа №1!'
+    cp 'Text @1' 'Sargsyan Victoria S.'
+
+7.  gzip 'Text @1'
+    gzip 'Text #3'
+    tar -cf MyAchiv.tar 'Text @1.gz' 'Text #3.gz'
+
+8.  gzip -d 'Text #3.gz'
+    chmod 700 'Sargsyan Victoria S.'
+    cd 'Sargsyan Victoria S.'
+    head -n 1 'Text @1' >> '../Text #3'
+    cd ..
+    cat >> 'Text #3'
+    Будь осторожен! Преступник вооружен!
+
+9.  cd 'Sargsyan Victoria S.'
+    touch 'Result_one'
+    tail -n 1 'Text @1' > 'Result_one'
+    head -n 1 'Text @1' >> 'Result_one'
+
+10. mv 'Result_one' 'Result_two'
+
+11. cd ..
+    cat 'Sargsyan Victoria S.'/T* > 'Лабораторная работа №1!/Result_3'
+    chmod 200 'Sargsyan Victoria S.' ; возвращаем ограничение прав на папку
+
+12. cd ..
+    mkdir 'Lab_1'
+    mv 'sandbox' 'Work' 'Work_files' 'Lab_1'

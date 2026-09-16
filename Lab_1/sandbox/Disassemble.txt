@@ -1,0 +1,22 @@
+a.out:
+Dump of assembler code for function _start:
+   0x08049020 <+0>:     mov    $0x4,%eax
+   0x08049025 <+5>:     mov    $0x1,%ebx
+   0x0804902a <+10>:    mov    $0x8049000,%ecx
+   0x0804902f <+15>:    mov    $0x20,%edx
+   0x08049034 <+20>:    int    $0x80
+   0x08049036 <+22>:    mov    $0x1,%eax
+   0x0804903b <+27>:    mov    $0x0,%ebx
+   0x08049040 <+32>:    int    $0x80
+   
+main:
+    0x0000118d <+0>:     lea    0x4(%esp),%ecx
+    0x00001191 <+4>:     and    $0xfffffff0,%esp
+    0x00001194 <+7>:     push   -0x4(%ecx)
+    0x00001197 <+10>:    push   %ebp
+    0x00001198 <+11>:    mov    %esp,%ebp
+    0x0000119a <+13>:    push   %ebx
+    0x0000119b <+14>:    push   %ecx
+    0x0000119c <+15>:    call   0x11c9 <__x86.get_pc_thunk.ax>
+    0x000011a1 <+20>:    add    $0x2e37,%eax
+    0x000011a6 <+25>:    sub    $0xc,%esp

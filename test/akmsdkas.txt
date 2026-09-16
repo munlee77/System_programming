@@ -1,0 +1,49 @@
+@munlee77 ➜ /workspaces/System_programming (master) $ cd Work
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cat > "Text @1"
+Птица говорун отличается умом и сообразительностью!
+Отличается умом, отличается сообразительностью...
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cat "Text @1" > "Text $2"
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cp "Text @1" "Sargsyan Victoria S."
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cat "Text @1" > "Text $2"
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cat 'Text @1' > 'Text $2'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cp 'Text $2' 'Лабораторная работа №1!'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ mv 'Text $2' 'Лабораторная работа №1!'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cp 'Text @1' 'Sargsyan Victoria S.'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ gzip 'Text @1' 'Text #3'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ tar -cf 'MyAchiv.tar' 'Text @1' 'Text #3' 
+tar: Text @1: Cannot stat: No such file or directory
+tar: Text #3: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ tar -cf 'MyAchiv.tar' 'Text @1.gz' 'Text #
+3.gz' 
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ head -n 1 'Text @1' >> 'Text #3'
+head: cannot open 'Text @1' for reading: No such file or directory
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ gzip -d 'Text #3.gz'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ head -n 1 'Sargsyan Victoria S./Text @1' >> 'Text #3'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cat >> 'Text #3'
+Будь осторожен! Преступник вооружен!
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ touch 'Sargsyan Victoria S./Result_one'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ tail -n 1 'Text @1' > 'Sargsyan Victoria S./Result_one'
+tail: cannot open 'Text @1' for reading: No such file or directory
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cd Sargsyan Victoria S.
+bash: cd: too many arguments
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cd 'Sargsyan Victoria S.'
+@munlee77 ➜ /workspaces/System_programming/Work/Sargsyan Victoria S. (master) $ tail -n 1 'Text @1' > 'Result_one'
+@munlee77 ➜ /workspaces/System_programming/Work/Sargsyan Victoria S. (master) $ gzip 'Text #3'
+gzip: Text #3: No such file or directory
+@munlee77 ➜ /workspaces/System_programming/Work/Sargsyan Victoria S. (master) $ head -n 1 'Text @1' >> 'Result_one'
+@munlee77 ➜ /workspaces/System_programming/Work/Sargsyan Victoria S. (master) $ mv 'Result_one' 'Result_two'
+@munlee77 ➜ /workspaces/System_programming/Work/Sargsyan Victoria S. (master) $ touch 'Result_3'
+@munlee77 ➜ /workspaces/System_programming/Work/Sargsyan Victoria S. (master) $ cd ..
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cd 'Лабораторная работа №1!'
+@munlee77 ➜ /workspaces/System_programming/Work/Лабораторная работа №1! (master) $ touch 'Result_3'
+@munlee77 ➜ /workspaces/System_programming/Work/Лабораторная работа №1! (master) $ cat 'Sargsyan Victoria S.'/T* > 'Лабораторная работа №1!/Result_3'
+bash: Лабораторная работа №1!/Result_3: No such file or directory
+@munlee77 ➜ /workspaces/System_programming/Work/Лабораторная работа №1! (master) $ cd ..
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cat 'Sargsyan Victoria S.'/T* > 'Лабораторная работа №1!/Result_3'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ uname -a >> 'Лабораторная работа №1!/Result_3'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ date >> 'Лабораторная работа №1!/Result_3'
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ touch Work_files
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ rm Work_files
+@munlee77 ➜ /workspaces/System_programming/Work (master) $ cd ..
+@munlee77 ➜ /workspaces/System_programming (master) $ 
